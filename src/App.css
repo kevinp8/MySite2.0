@@ -1,38 +1,178 @@
-.App {
+*{
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1vw;
+}
+body {
+  background-color: #181a1b;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+main > div {
+  width: 30%;
+}
+main > div> img {
+  width:100%;
+  border-radius: 100%;
+  border: 0.7vw solid #3dc4ff;
+  margin-top: 1vw;
+}
+nav > ul {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4.4vw;
+  margin-left: 2vw;
+  margin-top: 10vw;
+  margin-bottom: 1vw;
+}
+nav {
+  background-color: #1c1d1e;
+  margin-top: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 3vw;
+}
+nav > ul > li {
+  padding: 1vw;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1vw;
+  transition: all .2s ease-in-out;
+}
+nav > ul > li:hover {
+  transform: scale(1.2);
+  color: #3dc4ff;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 2vw;
+  margin-left: 2vw;
+  border-left: 1vw solid #3dc4ff;
+  line-height: 3vw;
+  padding-left: 1vw;
+  color: #cccccc;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3vw;
+  width: 50%;
+  margin: 2vw auto 6vw auto;
+  text-align: center;
+  line-height: 1.7vw;
+  color: #cccccc;
+}
+/*----------------------------------------------------------------*/
+.skills {
+  margin: 4vw auto 6vw auto;
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw;
+  align-items: flex-end;
+}
+span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2vw;
+  display: inline-block;
+  margin-top: 1vw;
+  color: #cccccc;
+  transition: all .2s ease-in-out;
+}
+span:hover {
+  color: #3dc4ff;
+}
+li > img {
+  width: 100%;
+  display: block;
+}
+a > img {
+  width: 100%;
+  display: block;
+  transition: all .2s ease-in-out;
+  margin-bottom: 1vw;
+  
+}
+a > img:hover {
+  transform: scale(1.2);
+}
+.skills > li {
+  width: 20%;
+  text-align: center;
+  
+}
+
+/*--------------------------------------------------*/
+
+input, textarea {
+  background-color: #1c1d1e;
+  border: 1px solid #cccccc;
+  border-radius: 0.4vw;
+  color: #3dc4ff;
+}
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2vw;
+  color: #cccccc;
+  margin: 2vw 1vw 0 0;
+  display: inline-block;
+}
+textarea {
+  display: block;
+  width: 50%;
+  height: 20vw;
+  margin: auto;
+}
+label:last-of-type{
+  display: block;
+  margin-bottom: 1vw;
+}
+form {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input{
+  margin-right: 2vw;
+}
+button {
+  background-color: #3dc4ff;
+  border: none;
+  padding: 0.5vw 1vw;
+  border-radius: 0.4vw;
+  margin: 1vw auto 6vw auto;
+  transition: all .2s ease-in-out;
+}
+button:hover {
+  transform: scale(1.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*----------------------------------------------------*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.projects {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  flex-wrap: wrap;
+  margin: 2vw auto 6vw auto;
+  gap: 1vw;
+  text-align: center;
+}
+.projects a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2vw;
+  color: #3dc4ff;
+  display: block;
+  text-decoration: none;
+}
+.projects li {
+  border: 1px solid #cccccc;
+  border-radius: 0.5vw;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*transition: all .2s ease-in-out;
+  transform: scale(1.2);*/
