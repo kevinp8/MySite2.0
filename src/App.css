@@ -164,14 +164,36 @@ button:hover {
 }
 .projects a {
   font-family: 'Open Sans', sans-serif;
-  font-size: 2vw;
-  color: #3dc4ff;
+  font-size: 1.5vw;
+  color: white;
   display: block;
   text-decoration: none;
+  transition: all .2s ease-in-out;
+  margin: 0.5vw 1vw 0 1vw;
+
+}
+.projects a:hover {
+  transform: scale(1.1);
+  color: white;
 }
 .projects li {
-  border: 1px solid #cccccc;
   border-radius: 0.5vw;
+  background-color: #3dc4ff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  width: 23%;
+}
+.projects span {
+  display: inline-block;
+  margin-bottom: 0.5vw;
+  color: white;
+}
+.projects span:hover {
+  color: white;
+}
+.projects img {
+  width: 90%;
+  margin: 1vw auto 0 auto;
+  border-radius: 1vw;
 }
 
 /*transition: all .2s ease-in-out;
