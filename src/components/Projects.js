@@ -88,7 +88,7 @@ function Projects(props) {
                 {Object.keys(projects).map(i => (
                     <li>
                         <a href={projects[i].alink} target='_blank' rel="noreferrer">{i}</a>
-                        <img src={projects[i].thumbnail}/>
+                        <img src={projects[i].thumbnail} alt={i}/>
                         <span>{projects[i].tech}</span>
                     </li>
                 ))}
