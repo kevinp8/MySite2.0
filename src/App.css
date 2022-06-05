@@ -10,6 +10,7 @@ body {
 main {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 main > div {
   width: 30%;
@@ -20,11 +21,6 @@ main > div> img {
   border: 0.7vw solid #3dc4ff;
   margin-top: 1vw;
 }
-nav > ul {
-  display: flex;
-  justify-content: center;
-  gap: 3vw;
-}
 h1 {
   font-family: 'Permanent Marker', cursive;
   font-size: 4.4vw;
@@ -32,6 +28,20 @@ h1 {
   margin-top: 10vw;
   margin-bottom: 1vw;
 }
+h2 {
+  font-size: 2vw;
+  margin-left: 2vw;
+  border-left: 1vw solid #3dc4ff;
+  line-height: 3vw;
+  padding-left: 1vw;
+  color: #cccccc;
+}
+nav > ul {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+
 nav {
   background-color: #1c1d1e;
   margin-top: 1vw;
@@ -50,21 +60,14 @@ nav > ul > li:hover {
   color: #3dc4ff;
   text-decoration: underline;
 }
-h2 {
-  font-size: 2vw;
-  margin-left: 2vw;
-  border-left: 1vw solid #3dc4ff;
-  line-height: 3vw;
-  padding-left: 1vw;
-  color: #cccccc;
-}
+
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.3vw;
   width: 50%;
   margin: 2vw auto 6vw auto;
   text-align: center;
-  line-height: 1.7vw;
+  line-height: 1.5;
   color: #cccccc;
 }
 /*----------------------------------------------------------------*/
@@ -196,5 +199,216 @@ button:hover {
   border-radius: 1vw;
 }
 
-/*transition: all .2s ease-in-out;
-  transform: scale(1.2);*/
+/*-------------------------------------------------------------*/
+@media screen and (max-width: 540px){
+  main > div {
+    width: 100%;;
+  }
+  main > div:first-of-type {
+    display: flex;
+    justify-content: center;
+  }
+  main > div> img {
+    width:80%;
+    border: 2vw solid #3dc4ff;
+    margin-top: 5vw;
+  }
+  h1 {
+    font-size: 15vw;
+    text-align: center;
+  }
+  h2 {
+    font-size: 8vw;
+    text-align: center;
+    margin: 6vw;
+    border-left: none;
+    border-bottom: 1vw solid #3dc4ff;
+    padding-bottom: 3vw;
+  }
+  nav {
+    height: 15vw;
+  }
+  nav > ul {
+    height: 100%;
+    gap: 5vw;
+    align-items: center;
+  }
+  nav > ul > li {
+    padding: 0;
+    font-size: 4vw;
+  }
+  p {
+    font-size: 4vw;
+    width: 90%;
+  }
+  /*skills and links-----------------------------------------------*/
+  .skills {
+    margin: 10vw auto 10vw auto;
+    width: 90%;
+    gap: 10vw;
+    align-items: flex-end;
+  }
+  span {
+    font-size: 5vw;
+    margin-top: 5vw;
+  }
+  .skills li {
+    width: 40%;
+  }
+  /*Contact Me-----------------------------------------------------*/
+  label {
+    font-size: 5vw;
+    margin: 2vw 1vw 0 0;
+  }
+  label:last-of-type {
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+  }
+  input, textarea {
+    border-radius: 2vw;
+  }
+  textarea {
+    width: 90%;
+    height: 30vw;
+  }
+  form {
+    text-align: center;
+  }
+  input{
+    width: 30vw;
+    height: 10vw;
+    margin-top: 5vw;
+  }
+  button {
+    font-size: 5vw;
+    padding: 2vw 4vw;
+    border-radius: 2vw;
+    margin-top: 4vw;
+  }
+  /*Projects--------------------------------------------*/
+  .projects {
+    width: 90%;
+    margin: 5vw auto 5vw auto;
+    gap: 3vw;
+  }
+  .projects a {
+    font-size: 5vw;
+    margin: 0.5vw 1vw 0 1vw;
+  }
+  .projects li {
+    border-radius: 2vw;
+    width: 45%;
+  }
+  .projects span {
+    font-size: 3.5vw;
+  }
+  .projects img {
+    border-radius: 2vw;
+  }
+}
+@media (min-width: 541px) and (max-width: 820px){
+  main > div {
+    width: 40%;
+  }
+  main > div:first-of-type {
+    display: flex;
+    justify-content: center;
+  }
+  main > div> img {
+    width: 100%;
+    border: 2vw solid #3dc4ff;
+    margin-top: 10vw;
+    height: 45vw;
+  }
+  h1 {
+    display: inline-block;
+    margin-top: 20vw;
+    font-size: 6vw;
+    text-align: center;
+  }
+  h2 {
+    font-size: 3vw;
+    line-height: 2;
+    
+  }
+  nav {
+    height: 10vw;
+  }
+  nav > ul {
+    height: 100%;
+    gap: 5vw;
+    align-items: center;
+  }
+  nav > ul > li {
+    padding: 0;
+    font-size: 3vw;
+  }
+  p {
+    font-size: 3vw;
+    width: 90%;
+  }
+  /*skills and links-----------------------------------------------*/
+  .skills {
+    margin: 10vw auto 10vw auto;
+    width: 90%;
+    gap: 10vw;
+    align-items: flex-end;
+  }
+  span {
+    font-size: 5vw;
+    margin-top: 5vw;
+  }
+  .skills li {
+    width: 20%;
+  }
+  /*Contact Me-----------------------------------------------------*/
+  label {
+    font-size: 3vw;
+    margin: 2vw 1vw 0 0;
+  }
+  label:last-of-type {
+    margin-top: 5vw;
+    margin-bottom: 3vw;
+  }
+  input, textarea {
+    border-radius: 2vw;
+  }
+  textarea {
+    width: 90%;
+    height: 30vw;
+  }
+  form {
+    text-align: center;
+  }
+  input{
+    width: 30vw;
+    height: 6vw;
+    margin-top: 5vw;
+  }
+  button {
+    font-size: 3vw;
+    padding: 2vw 4vw;
+    border-radius: 2vw;
+    margin-top: 4vw;
+  }
+  /*Projects--------------------------------------------*/
+  .projects {
+    width: 90%;
+    margin: 5vw auto 5vw auto;
+    gap: 3vw;
+  }
+  .projects a {
+    font-size: 4vw;
+    margin: 0.5vw 1vw 0 1vw;
+  }
+  .projects li {
+    border-radius: 2vw;
+    width: 30%;
+  }
+  .projects span {
+    font-size: 3vw;
+  }
+  .projects img {
+    border-radius: 2vw;
+  }
+}
