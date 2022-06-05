@@ -16,7 +16,7 @@ function Links(props) {
         return (
             <ul className='skills'>
                 {links.map((i, index) => (<li>
-                    <a href={urls[index]} target='_blank'>
+                    <a href={urls[index]} target='_blank' rel="noreferrer">
                         <img src={i}/>
                         <span>{linksStr[index]}</span>
                     </a>

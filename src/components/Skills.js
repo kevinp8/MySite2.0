@@ -11,11 +11,12 @@ import mongo from './imgs/skills/mongodb.png'
 function Skills(props) {
     let skills = [python, html, css, javascript, react, node, mongo]
     let skillStr = ['Python', 'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB']
+    let alts = ['Python', 'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB']
     if (props.show === 2) {
         return (
             <ul className='skills'>
                 {skills.map((i, index) => (<li>
-                    <img src={i}/>
+                    <img src={i} alt={alts[index]}/>
                     <span>{skillStr[index]}</span>
                 </li>))}
             </ul>

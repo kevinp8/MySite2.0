@@ -5,7 +5,7 @@ function Top() {
   return (
     <main>
         <div>
-            <img src={me}/>
+            <img src={me} alt='me'/>
         </div>
         <div>
             <h1>Kevin Pham</h1>

@@ -87,7 +87,7 @@ function Projects(props) {
             <ul className='projects'>
                 {Object.keys(projects).map(i => (
                     <li>
-                        <a href={projects[i].alink} target='_blank'>{i}</a>
+                        <a href={projects[i].alink} target='_blank' rel="noreferrer">{i}</a>
                         <img src={projects[i].thumbnail}/>
                         <span>{projects[i].tech}</span>
                     </li>
