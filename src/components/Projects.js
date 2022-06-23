@@ -9,8 +9,6 @@ import rps from './imgs/projects/rps.png'
 import tech from './imgs/projects/techcrunch.jpeg'
 import tempr from './imgs/projects/temp.jpeg'
 import etch from './imgs/projects/etch.png'
-import tasks from './imgs/projects/tasks.png'
-import cv from './imgs/projects/cv.png'
 import ttt from './imgs/projects/ttt.png'
 import site2 from './imgs/projects/site2.png'
 import meme from './imgs/projects/meme.png'
@@ -30,16 +28,6 @@ function Projects(props) {
         'Tic-Tac-Toe': {
             alink: 'https://statuesque-melba-255386.netlify.app/',
             thumbnail: ttt,
-            tech: 'React'
-        }, 
-        'CV Maker': {
-            alink: 'https://loquacious-biscuit-8372c4.netlify.app/',
-            thumbnail: cv,
-            tech: 'React'
-        }, 
-        'Task App': {
-            alink: 'https://calm-gelato-60175d.netlify.app/',
-            thumbnail: tasks,
             tech: 'React'
         }, 
         'Etch-A-Sketch': {
