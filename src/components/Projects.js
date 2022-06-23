@@ -13,11 +13,17 @@ import tasks from './imgs/projects/tasks.png'
 import cv from './imgs/projects/cv.png'
 import ttt from './imgs/projects/ttt.png'
 import site2 from './imgs/projects/site2.png'
+import meme from './imgs/projects/meme.png'
 
 function Projects(props) {
     let projects = {
+        'Meme Generator': {
+            alink: 'https://mellifluous-travesseiro-b4bc69.netlify.app/',
+            thumbnail: meme,
+            tech: 'React'
+        },
         'My Website V2': {
-            alink: '',
+            alink: 'https://kevinfullstack.netlify.app/',
             thumbnail: site2,
             tech: 'React'
         },
