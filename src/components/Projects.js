@@ -12,9 +12,15 @@ import etch from './imgs/projects/etch.png'
 import ttt from './imgs/projects/ttt.png'
 import site2 from './imgs/projects/site2.png'
 import meme from './imgs/projects/meme.png'
+import todo from './imgs/projects/todo.png'
 
 function Projects(props) {
     let projects = {
+        'CRUD Todo List': {
+            alink: 'https://kevins-todo-crud.herokuapp.com/',
+            thumbnail: todo,
+            tech: 'Express, MongoDB, Node'
+        },
         'Meme Generator': {
             alink: 'https://mellifluous-travesseiro-b4bc69.netlify.app/',
             thumbnail: meme,
